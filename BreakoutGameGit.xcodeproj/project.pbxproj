@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		82AD7E221871F99A0091B551 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 82AD7E211871F99A0091B551 /* main.cpp */; };
 		82AD7E241871F99A0091B551 /* BreakoutGameGit.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 82AD7E231871F99A0091B551 /* BreakoutGameGit.1 */; };
+		82AD7E2C1871F9BC0091B551 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82AD7E2A1871F9BC0091B551 /* SDL2_image.framework */; };
+		82AD7E2D1871F9BC0091B551 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82AD7E2B1871F9BC0091B551 /* SDL2.framework */; };
+		82AD7E2F1871F9C40091B551 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82AD7E2E1871F9C40091B551 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +31,9 @@
 		82AD7E1E1871F99A0091B551 /* BreakoutGameGit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BreakoutGameGit; sourceTree = BUILT_PRODUCTS_DIR; };
 		82AD7E211871F99A0091B551 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		82AD7E231871F99A0091B551 /* BreakoutGameGit.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = BreakoutGameGit.1; sourceTree = "<group>"; };
+		82AD7E2A1871F9BC0091B551 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = "../../Documents/MyFrameworks/Cpp Frameworks/SDL2 framework/SDL2_image.framework"; sourceTree = "<group>"; };
+		82AD7E2B1871F9BC0091B551 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = "../../Documents/MyFrameworks/Cpp Frameworks/SDL2 framework/SDL2.framework"; sourceTree = "<group>"; };
+		82AD7E2E1871F9C40091B551 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82AD7E2F1871F9C40091B551 /* OpenGL.framework in Frameworks */,
+				82AD7E2C1871F9BC0091B551 /* SDL2_image.framework in Frameworks */,
+				82AD7E2D1871F9BC0091B551 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,9 @@
 		82AD7E151871F99A0091B551 = {
 			isa = PBXGroup;
 			children = (
+				82AD7E2E1871F9C40091B551 /* OpenGL.framework */,
+				82AD7E2A1871F9BC0091B551 /* SDL2_image.framework */,
+				82AD7E2B1871F9BC0091B551 /* SDL2.framework */,
 				82AD7E201871F99A0091B551 /* BreakoutGameGit */,
 				82AD7E1F1871F99A0091B551 /* Products */,
 			);
@@ -195,6 +207,10 @@
 		82AD7E281871F99A0091B551 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/emrebball/Documents/MyFrameworks/Cpp\\ Frameworks/SDL2\\ framework",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -202,6 +218,10 @@
 		82AD7E291871F99A0091B551 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/emrebball/Documents/MyFrameworks/Cpp\\ Frameworks/SDL2\\ framework",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
